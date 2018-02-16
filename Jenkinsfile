@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
-@Library(['lib-1 'lib-2']) _
+
 
 //all declarations must be enclosed within a pipeline block
 pipeline {
