@@ -13,11 +13,11 @@ pipeline {
             //define one or more steps
             steps {
 
-                {
+                
                     sh "mvn clean install"
 
                     
-                }
+                
             }
         }
 
@@ -26,7 +26,7 @@ pipeline {
             steps {
                 lock(resource: "${env.JOB_NAME}/10", inversePrecedence: true) {
                     milestone 10
-                    echo " Hello"
+                    echo "Hello"
                 }
             }
         }
